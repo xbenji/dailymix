@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  artist: MyString
+  album: MyString
+  uri: MyString
+  date: 2012-04-22 21:46:22
+  playlist: 
+
+two:
+  name: MyString
+  artist: MyString
+  album: MyString
+  uri: MyString
+  date: 2012-04-22 21:46:22
+  playlist: 

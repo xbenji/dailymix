@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+body {
+	font-family: "Ubuntu", "Arial", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+	background-color: #CFCEC5;
+  	background-image: url(noise.png);
+	background-repeat: repeat;
+	background-position: top left;
+	text-shadow: 0 1px white;
+    font-size: 16px;
+}
+
+#content {
+  font-family: 'Amaranth', sans-serif;
+  width: 100%;
+  max-width: 800px;
+  line-height: 1.4em;
+  margin: 100px 0px 100px 200px;
+}
+
+.playlist {
+ float:left; 
+ width:400px;
+ margin-top: 50px;
+}
+
+.btn_container {
+	height:85px;
+    overflow:hidden;
+}
+
+h1 { font-size: 72px; }
+
+p {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	color: #555;
+}
+
+a.pl_title_btn {
+	font-size: 24px;
+	text-decoration: none;
+	text-color:  #CFCEC5;
+	color:  #000;
+	font-weight: bold;
+}
+
+a.button {
+  display: inline-block;
+  background: #56ba4a;
+  border: 3px solid #59a24f;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 20px;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #59a24f;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  margin: 10px 20px 0 0;
+  -webkit-transition: all 0.25s ease;
+}
+
+a.button:hover {
+  background: #2f8325;
+  box-shadow: none;
+}

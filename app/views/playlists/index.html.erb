@@ -1,0 +1,16 @@
+<div id="button_bar">
+<a href="<%= playlist_path(:all) %>" class="button">All</a>
+<a href="<%= playlist_path(:today) %>" class="button">Today</a>
+<a href="<%= playlist_path(24) %>" class="button">24h</a>
+<a href="<%= playlist_path(48) %>" class="button">48h</a>
+</div>
+<% @playlists.each do |pl| %>
+	<div class="playlist">
+	<a href="#" class="pl_title_btn"><%= truncate(pl.name, :length => 24) %></a>
+		<p><%= pl.songs.size %> new songs</p>
+	<div class="btn_container">
+	<iframe src="https://embed.spotify.com/?uri=spotify:trackset:DM_:<%= join_tracks_id(pl) %>&view=list&theme=black" frameborder="0" allowtransparency="true" style="width:300px; height:380px; left:0px; margin-top:5px;" ></iframe>
+	</div>
+	</div>
+
+<% end %>

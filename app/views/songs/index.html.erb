@@ -1,0 +1,7 @@
+<h1>Listing songs</h1>
+
+<iframe src="https://embed.spotify.com/?uri=spotify:trackset:DAILY MIX:<%= join_tracks_id(@songs) %>" frameborder="0" allowtransparency="true"></iframe>
+
+<% @songs.each do |song| %>
+	<p><a href="<%= song.uri %>"><%= song.artist%> - <%= song.name %></a></p>
+<% end %>
